@@ -1,39 +1,39 @@
-![Design Patterns For Humans](https://cloud.githubusercontent.com/assets/11269635/23065273/1b7e5938-f515-11e6-8dd3-d0d58de6bb9a.png)
+![Design Patterns cho mọi người](https://cloud.githubusercontent.com/assets/11269635/23065273/1b7e5938-f515-11e6-8dd3-d0d58de6bb9a.png)
 
 ***
 
 <p align="center">
-🎉 Ultra-simplified explanation to design patterns! 🎉
+🎉 Phần giải thích cực kì đơn giản về design patterns! 🎉
 </p>
 <p align="center">
-A topic that can easily make anyone's mind wobble. Here I try to make them stick in to your mind (and maybe mine) by explaining them in the <i>simplest</i> way possible.
+Đây là một chủ đề có thể khiến tâm trí của bất kì ai lay động rất dễ dàng. Ở đây tôi sẽ cố gắng giúp bạn nhớ nó thật lâu (và có thể là cả tôi nữa) bằng cách giải thích chúng bằng những cách <i>đơn giản nhất</i> có thể.
 </p>
 
 ***
 
-<sub>Check out my [blog](http://kamranahmed.info) and say "hi" on [Twitter](https://twitter.com/kamranahmedse).</sub>
+<sub>Xem qua [blog](http://kamranahmed.info) của tôi và tương tác trên [Twitter](https://twitter.com/kamranahmedse).</sub>
 
-Introduction
+Giới thiệu
 =================
 
-Design patterns are solutions to recurring problems; **guidelines on how to tackle certain problems**. They are not classes, packages or libraries that you can plug into your application and wait for the magic to happen. These are, rather, guidelines on how to tackle certain problems in certain situations.
+Design pattern là những giải pháp cho những vấn đề thường gặp; **hướng dẫn cách giải quyết cho những vấn đề nhất định**. Chúng không phải là những class, package hay thư viện mà bạn có thể nhúng vào ứng dụng của mình và chờ đợi điều kì diệu xảy ra. Mà chúng chỉ là những hướng dẫn về cách giải quyết các vấn đề nhất định trong những tình huống nhất định.
 
-> Design patterns are solutions to recurring problems; guidelines on how to tackle certain problems
+> Design pattern là những giải pháp cho những vấn đề thường gặp; hướng dẫn giải quyết các vấn đề nhất định.
 
-Wikipedia describes them as
+Wikipedia mô tả chúng như sau:
 
-> In software engineering, a software design pattern is a general reusable solution to a commonly occurring problem within a given context in software design. It is not a finished design that can be transformed directly into source or machine code. It is a description or template for how to solve a problem that can be used in many different situations.
+> Trong lĩnh vực kĩ nghệ phần mềm, một design pattern của phần mềm là một giải pháp cho việc tái sử dụng chung cho những vấn đề thường xảy ra trong lĩnh vực thiết kế phần mềm. Nó không phải là những thiết kế hoàn chỉnh có thể chuyển thành mã nguồn hoặc mã máy. Nó chỉ là mô tả hoặc template cho việc làm sao để giải quyết vấn đề có thể sử dụng cho các tình huống khác nhau.
 
-⚠️ Be Careful
+⚠️ Hãy cẩn thận
 -----------------
-- Design patterns are not a silver bullet to all your problems.
-- Do not try to force them; bad things are supposed to happen, if done so. 
-- Keep in mind that design patterns are solutions **to** problems, not solutions **finding** problems; so don't overthink.
-- If used in a correct place in a correct manner, they can prove to be a savior; or else they can result in a horrible mess of a code.
+- Các design pattern không phải là những nút bạc cho tất cả các vấn đề của bạn.
+- Đừng cố ép buộc chúng; những thứ rất tệ có thể sẽ xảy ra nếu làm như vậy.
+- Nhớ những design pattern này chỉ là giải pháp cho các vấn đề, không phải là giải pháp để tìm ra các vấn đề; vì thế nên đừng nghĩ quá nhiều về nó.
+- Nếu sử dụng đúng lúc đúng chỗ, chúng có thể chứng minh mình là những vị cứu tinh, hoặc chúng có thể dẫn tới một mớ code hỗn độn kinh khủng.
 
-> Also note that the code samples below are in PHP-7, however this shouldn't stop you because the concepts are same anyways.
+> Chú ý thêm là các ví dụ code thực hiện trên PHP-7, tuy nhiên điều này không ảnh hưởng tới bạn vì các khái niệm là giống nhau.
 
-Types of Design Patterns
+Các loại Design Pattern
 -----------------
 
 * [Creational](#creational-design-patterns)
