@@ -540,13 +540,15 @@ Nói một cách ngắn gọn
 > Đảm bảo là chỉ có một đối tượng duy nhất của mỗi class được tạo ra.
 
 Wikipedia định nghĩa là
-> In software engineering, the singleton pattern is a software design pattern that restricts the instantiation of a class to one object. This is useful when exactly one object is needed to coordinate actions across the system.
+> Trong kĩ nghệ phần mềm, singleton pattern là một design pattern của phần mềm mà nó hạn chế sự khởi tạo của mỗi class chỉ thành một object. Điều này khá hữu dụng khi cần chính xác một object để điều phối các hành động trên hệ thống.
 
-Singleton pattern is actually considered an anti-pattern and overuse of it should be avoided. It is not necessarily bad and could have some valid use-cases but should be used with caution because it introduces a global state in your application and change to it in one place could affect in the other areas and it could become pretty difficult to debug. The other bad thing about them is it makes your code tightly coupled plus mocking the singleton could be difficult.
+Singleton pattern thực sự được coi là một pattern có tính chống lại và nên hạn chế sử dụng nó nhất có thể. Nó không hẳn là không cần thiết mà trong một số trường hợp nên sử dụng nó cẩn thận vì nó tạo ra một số trạng thái ở mức global trên ứng dụng của bạn  và việc thay đổi nó ở nơi này có thể dẫn tới việc ảnh hưởng ở nơi khác và rất khó để debug được. Một ảnh hưởng tệ khác là nó khiến code của bạn bị gắn kết chặt chẽ cộng với việc sử dụng singleton có thể rất khó khăn.
 
-**Programmatic Example**
+**Ví dụ trong lập trình**
 
-To create a singleton, make the constructor private, disable cloning, disable extension and create a static variable to house the instance
+Để tạo ra một singleton, phải đặt private cho hàm khởi tạo, 
+vô hiệu hóa việc nhân bản, vô hiệu hóa việc mở rộng và tạo ra các biến static để chứa các instance nhất định
+
 ```php
 final class President
 {
@@ -577,7 +579,9 @@ final class President
     }
 }
 ```
-Then in order to use
+
+Sau đó để sử dụng
+
 ```php
 $president1 = President::getInstance();
 $president2 = President::getInstance();
