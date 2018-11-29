@@ -22,7 +22,7 @@ Design pattern là những giải pháp cho những vấn đề thường gặp;
 
 Wikipedia mô tả chúng như sau:
 
-> Trong lĩnh vực kĩ nghệ phần mềm, một design pattern của phần mềm là một giải pháp cho việc tái sử dụng chung cho những vấn đề thường xảy ra trong lĩnh vực thiết kế phần mềm. Nó không phải là những thiết kế hoàn chỉnh có thể chuyển thành mã nguồn hoặc mã máy. Nó chỉ là mô tả hoặc template cho việc làm sao để giải quyết vấn đề có thể sử dụng cho các tình huống khác nhau.
+> Trong lĩnh vực kĩ thuật phần mềm, một design pattern của phần mềm là một giải pháp cho việc tái sử dụng chung cho những vấn đề thường xảy ra trong lĩnh vực thiết kế phần mềm. Nó không phải là những thiết kế hoàn chỉnh có thể chuyển thành mã nguồn hoặc mã máy. Nó chỉ là mô tả hoặc template cho việc làm sao để giải quyết vấn đề có thể sử dụng cho các tình huống khác nhau.
 
 ⚠️ Hãy cẩn thận
 -----------------
@@ -58,7 +58,7 @@ Wikipedia định nghĩa như sau:
 🏠 Simple Factory
 --------------
 Ví dụ thực tế
-> Hãy xem xét việc này, bạn đang xây dựng một ngôi nhà và bạn cần những cái cửa. Bạn có thể mặc những bộ đồ bảo hộ của thợ mộc, mang về 1 ít gỗ, keo, đinh và tất cả những công cụ cần thiết để tạo ra một cái cửa và bắt đầu xây dựng nó trong chính ngôi nhà của bạn hoặc đơn giản hơn bạn chỉ cần gọi tới nhà máy và nhận được cái cửa đã được hoàn thiện trước đó vì thế bạn không cần học mọi thứ về cách tạo ra một cái cửa hay phải đối mặt với mớ hỗn độn khi tạo ra nó.
+> Hãy xem xét việc này, bạn đang xây dựng một ngôi nhà và bạn cần những cái cửa. Bạn có thể mặc những bộ đồ bảo hộ của thợ mộc, mang về 1 ít gỗ, keo, đinh và tất cả những công cụ cần thiết để tạo ra một cái cửa và bắt đầu làm nó trong chính ngôi nhà của bạn hoặc đơn giản hơn bạn chỉ cần gọi tới nhà máy và nhận được cái cửa đã được hoàn thiện trước đó vì thế bạn không cần học mọi thứ về cách tạo ra một cái cửa hay phải đối mặt với mớ hỗn độn khi tạo ra nó.
 
 Nói một cách đơn giản
 > Simple factory chỉ đơn giản là tạo ra những phiên bản cho client mà không cần lộ ra bất kì một logic về việc khởi tạo nào tới phía người dùng.
@@ -219,7 +219,7 @@ $marketingManager->takeInterview(); // Output: Asking about community building.
 
 **Sử dụng khi nào?**
 
-Nó hữu dụng khi có một số việc được sử lý chung trong một class nhưng các class con được yêu cầu có thể được đưa ra bởi các quyết định linh động trong khi chạy. Hay nói cách khác, khi client không biết chính xác class con nào là cần thiết.
+Nó hữu dụng khi có một số việc được xử lý chung trong một class nhưng các class con được yêu cầu có thể được đưa ra bởi các quyết định linh động trong khi chạy. Hay nói cách khác, khi client không biết chính xác class con nào là cần thiết.
 
 🔨 Abstract Factory
 ----------------
@@ -468,9 +468,9 @@ Nói một cách ngắn gọn
 > Việc tạo object dựa trên một object đã tồn tại thông qua việc nhân bản.
 
 Wikipedia định nghĩa là:
-> Prototype pattern là một creational design pattern trong phát triển phần mềm. Nó được sử dụng khi kiểu của object cần tạo được định nghĩa bởi một thực thể nguyên mẫu, giống nhwu việc nhân bản nó để tạo ra một object mới.
+> Prototype pattern là một creational design pattern trong phát triển phần mềm. Nó được sử dụng khi kiểu của object cần tạo được định nghĩa bởi một thực thể nguyên mẫu, giống như việc nhân bản nó để tạo ra một object mới.
 
-Nói ngắn gọn, nó cho phép bạn tạo một bản sao chpes một object đã tồn tại và sửa đổi nó theo nhu cầu của bạn thay vì trải qua các sự cố khi tạo một object từ đầu và thiết lập lại nó.
+Nói ngắn gọn, nó cho phép bạn tạo một bản sao chép một object đã tồn tại và sửa đổi nó theo nhu cầu của bạn thay vì trải qua các sự cố khi tạo một object từ đầu và thiết lập lại nó.
 
 **Ví dụ trong lập trình**
 
@@ -534,13 +534,13 @@ Khi một object được yêu cầu phải tương tự như object hiện có 
 ------------
 
 Ví dụ thực tế
-> Cùng một lúc chỉ có thể có một tổng thống đối với mỗi quốc gia. Cùng một tổng thống phải đưa ra được hành động bất cứ khi nào nhiệm vụ gọi. Tổng thống ở đâu là một singleton.
+> Cùng một lúc chỉ có thể có một tổng thống đối với mỗi quốc gia. Cùng một tổng thống phải đưa ra được hành động bất cứ khi nào nhiệm vụ gọi. Tổng thống ở đây là một singleton.
 
 Nói một cách ngắn gọn 
 > Đảm bảo là chỉ có một đối tượng duy nhất của mỗi class được tạo ra.
 
 Wikipedia định nghĩa là
-> Trong kĩ nghệ phần mềm, singleton pattern là một design pattern của phần mềm mà nó hạn chế sự khởi tạo của mỗi class chỉ thành một object. Điều này khá hữu dụng khi cần chính xác một object để điều phối các hành động trên hệ thống.
+> Trong kĩ thuật phần mềm, singleton pattern là một design pattern của phần mềm mà nó hạn chế sự khởi tạo của mỗi class chỉ thành một object. Điều này khá hữu dụng khi cần chính xác một object để điều phối các hành động trên hệ thống.
 
 Singleton pattern thực sự được coi là một pattern có tính chống lại và nên hạn chế sử dụng nó nhất có thể. Nó không hẳn là không cần thiết mà trong một số trường hợp nên sử dụng nó cẩn thận vì nó tạo ra một số trạng thái ở mức global trên ứng dụng của bạn  và việc thay đổi nó ở nơi này có thể dẫn tới việc ảnh hưởng ở nơi khác và rất khó để debug được. Một ảnh hưởng tệ khác là nó khiến code của bạn bị gắn kết chặt chẽ cộng với việc sử dụng singleton có thể rất khó khăn.
 
