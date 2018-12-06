@@ -3,7 +3,7 @@
 ***
 
 <p align="center">
-🎉 Ultra-simplified explanation to design patterns! 🎉
+🎉 Giải thích cực kỳ đơn giản về design patterns! 🎉
 </p>
 <p align="center">
 Một chủ đề có thể dễ dàng làm suy nghĩ bị lung lay. Ở đây tôi cố gắng đứa nó vào tâm trí của bạn (và có thể là tôi) bằng cách giải thích chúng theo các đơn giản nhất.
@@ -59,7 +59,7 @@ Wikipedia nói
 🏠 Simple Factory
 --------------
 Ví dụ thực tế
-> Hãy xem xét, bạn đang xây dựng một ngôi nhà và bạn cần những cái cửa. Bạn có thể mặc quần áo thợ mộc, mang một ít gỗ, keo, móng tay và tất cả các công cụ cần thiết để làm cái cửa và bắt đầu làm nó trong nhà của bạn hoặc bạn có thể đơn giản chỉ cần gọi đến nhà máy và nhận được cánh cửa đã được làm giao cho bạn mà bạn không cần phải tìm hiểu bất cứ điều gì về việc làm cửa hoặc để đối phó với mớ hỗn độn mà đi kèm với việc làm nó.
+> Hãy xem xét, bạn đang xây dựng một ngôi nhà và bạn cần những cái cửa. Bạn có thể mặc quần áo thợ mộc, mang một ít gỗ, keo, đinh và tất cả các công cụ cần thiết để làm cái cửa và bắt đầu làm nó trong nhà của bạn hoặc bạn có thể đơn giản chỉ cần gọi đến nhà máy và nhận được cánh cửa đã được làm giao cho bạn mà bạn không cần phải tìm hiểu bất cứ điều gì về việc làm cửa hoặc để đối phó với mớ hỗn độn mà đi kèm với việc làm nó.
 
 Nói một cách đơn giản
 > Simple factory chỉ cần tạo một thể hiện cho client mà không lộ bất kỳ sự logic khởi tạo nào cho client.
@@ -212,7 +212,7 @@ $marketingManager->takeInterview(); // Output: Asking about community building.
 
 **Khi nào sử dụng?**
 
-Hữu ích khi có một số xử lý chung trong một class nhưng class con được yêu cầu là được quyết định lịnh động động trong thời gian chạy. Hay nói cách khác, khi client không biết chính xác class con nào mà nó có thể cần.
+Hữu ích khi có một số xử lý chung trong một class nhưng class con được yêu cầu là được quyết định linh động động trong thời gian chạy. Hay nói cách khác, khi client không biết chính xác class con nào mà nó có thể cần.
 
 🔨 Abstract Factory
 ----------------
@@ -452,7 +452,7 @@ Khi có thể có một số loại của một đối tượng và để tránh
 🐑 Prototype
 ------------
 Ví dụ thực tế
-> Nhớ lại dolly? Con cừu được nhân bản ! Cho phép không nhận vào các chi tiết nhưng điểm mấu chốt ở đây là nó là tất cả về nhân bản
+> Nhớ lại dolly? Con cừu được nhân bản ! Cho phép không đi vào các chi tiết nhưng điểm mấu chốt ở đây là nó là tất cả về nhân bản
 
 Nói đơn giản 
 > Tạo đối tượng dựa trên một đối tượng đã tồn tại thông qua việc nhân bản (clone).
@@ -521,7 +521,7 @@ Khi một đối tượng được yêu cầu tương tự như đối tượng 
 💍 Singleton
 ------------
 Ví dụ thực tế
-> Mỗi lần chỉ có thể là một tổng thống của một quốc gia. Cùng một tổng thống phải được đưa ra hành động, bất cứ khi nào có nhiệm vụ. Tổng thống ở đây là singleton.
+> Tại một thời điểm thì chỉ có một tổng thống của một quốc gia. Cùng một tổng thống phải được đưa ra hành động, bất cứ khi nào có nhiệm vụ. Tổng thống ở đây là singleton.
 
 Nói đơn giản
 > Đảm bảo rằng chỉ có một đối tượng của một class cụ thể được tạo ra.
@@ -778,7 +778,7 @@ Nói một cách đơn giản
 > Composite pattern cho phép client xử lý các đối tượng riêng lẻ theo cách thống nhất.
 
 Wikipedia nói
-> In software engineering, the composite pattern is a partitioning design pattern. The composite pattern describes that a group of objects is to be treated in the same way as a single instance of an object. The intent of a composite is to "compose" objects into tree structures to represent part-whole hierarchies. Implementing the composite pattern lets clients treat individual objects and compositions uniformly.
+> Trong kĩ nghệ phần mềm, composite pattern là một design pattern thuộc nhóm phân vùng. Composite pattern mô tả về một nhóm các đối tượng được xử lý cùng một cách giống như một instance của đối tượng. Mục đích của composite là "tạo ra" các đối tượng vào một cấu trúc dạng cây để đại diện cho toàn bộ hệ thống phân cấp. Việc triển khai composite pattern cho phép client xử lý các đối tượng và bố cục riêng lẻ một cách thống nhất.
 
 **Ví dụ lập  trình**
 
